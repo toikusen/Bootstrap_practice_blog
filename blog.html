@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <style>
+        .text-hexschool {
+            color: #00cc99 !important;
+        }
+    </style>
+    <title>Blog</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00cc99">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-book"></i>
+                Bootstrap部落格
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#" class="text-hexschool">Home</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-hexschool">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+        <h1 class="text-hexschool">Bootstrap 4 繁體中文手冊</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="my-2 text-secondary">
+                    <small>
+                        <span class="me-2">
+                            <i class="far fa-user"></i>杜昱成</span>
+                        <span class="me-2">2021/08/17</span>
+                        <span class="me-2"><i class="fas fa-tags"></i>event</span>
+                    </small>
+                </div>
+                <article>
+                    <p>Bootstrap 是目前最主流的 CSS 框架，由於他包含了大量的元件以及具有良好的架構，在實際運用及擴增也都是非常容易，也越來越多開發者協同一起開發 (Github 上有超過 10 萬個
+                        Star)。如今第四版 Beta (Bootstrap 4 Beta) 也在 2017/8/10 釋出，我們先來看看他有什麼樣的改變吧！</p>
+                    <h2 class="text-secondary">Bootstrap 4 的特色</h2>
+                    <p>Bootstrap 4 Beta 經過了 Alpha 六個版本的歷練，重新翻修了大量元件以及加入許多新的元素，如果你沒有用過 Alpha
+                        的任何版本，提供了以下摘要讓您快速了解第四版有什麼新新聞：
+                    </p>
+                    <ul>
+                        <li>從 Less 到 Sass: 自從 Sass 不在只能使用 Ruby 編譯後，Libsass 有更快的編譯效率，加上 Sass 本身具有龐大的開發社群，所以 Bootstrap 從
+                            Less
+                            改用
+                            Sass 囉！</li>
+                        <li>Flexbox 以及強化的網格系統: 網格系統不在使用 <code>float</code> ，進而改用 <code>flexbox</code>
+                            ，讓行動裝置及桌面裝置有更彈性的排版方法。
+                        </li>
+                        <li>卡片元件: 許多元件本質相似度較高，如 <code>wells</code>、<code>thumbnails</code>、<code>panels</code>
+                            等等，這些元件被捨棄掉，取而代之的則是卡片元件，不僅可以完成上述元件的功能，且運作的更為美好。</li>
+                        <li>彈性更高的變數: 以往的樣式都是固定的名稱、色彩，透過 Sass <code>$map</code> 變數可以更有彈性的調整、新增、減少不同的品牌色彩、陰影等視覺效果。</li>
+                        <li>IE8、IE9 掰掰: 放棄舊有的瀏覽器支持，讓元件的使用及開發上更為容易，如果還是考慮支援 IE8/IE9、 Safari 8-、 iOS 8- 可以繼續使用 Bootstrap
+                            3。
+                        </li>
+                        <li>重新設計說明文件: 新的文件重新設計了，並且加入一些插件讓搜尋上更為容易！</li>
+                        <li>更多的改變: 重新設計更多更多的樣式，像是自由套色的導覽列、HTML5 的驗證樣式、嶄新的輪播以及許多的元件</li>
+                    </ul>
+
+                    <img class="img-fluid"
+                        src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F08%2Fbootstrap4.png?alt=media&token=0b014ac6-b99b-46e7-8336-3fbfda1da3c2"
+                        alt="">
+                </article>
+
+                <div class="card">
+                    <div class="card-header">
+                        留言回覆
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" width="64" height="64"
+                                    alt="...">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5>Zoe</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here"
+                                        id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <button class="btn btn-light btn-block mt-2">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0">
+                                <img src="https://randomuser.me/api/portraits/women/90.jpg" width="64" height="64"
+                                    alt="...">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5>Mary</h5>
+                                This is some content from a media component. You can replace this with any content and
+                                adjust it as needed.
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <img src="https://randomuser.me/api/portraits/men/23.jpg" width="64" height="64"
+                                    alt="...">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5>John</h5>
+                                This is some content from a media component. You can replace this with any content and
+                                adjust it as needed.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h2 class="text-secondary mt-3">
+                    Tags
+                </h2>
+                <span class="badge bg-info">
+                    <i class="fas fa-tags"></i>
+                    css
+                </span>
+                <span class="badge bg-info">
+                    <i class="fas fa-tags"></i>
+                    html
+                </span>
+                <span class="badge bg-info">
+                    <i class="fas fa-tags"></i>
+                    Bootstrap4
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-4 mt-3">
+        <div class="container d-flex justify-content-between">
+            <div>
+                © Copyright 2021 杜昱成
+            </div>
+            <div>
+                <a href="#" class="text-hexschool"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" class="text-hexschool"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-hexschool"><i class="fas fa-envelope"></i></a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
